@@ -3,7 +3,7 @@ import { UpdateTodoDto } from "../dtos/todos/update-doto.dto";
 import { TodoEntity } from "../entities/todo.entity";
 
 
-export abstract class TodoDatasource {
+export abstract class TodoRepository {
 
     abstract create(createTodoDto: CreateTodoDto): Promise<TodoEntity>;
 
